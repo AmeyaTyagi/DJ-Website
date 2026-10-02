@@ -1,0 +1,16 @@
+# no dependencies, but just in case
+node_modules/
+
+# the trained model and its examples are personal data, not source.
+# to version yours anyway: git add -f dj-model.json
+dj-model.json
+
+# logs and OS noise
+*.log
+.DS_Store
+Thumbs.db
+
+# browser profiles left behind by headless runs
+cdp-profile*/
+tt-profile*/
+probe-profile*/

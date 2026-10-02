@@ -1,0 +1,47 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "serve",
+      "detail": "Start the Blend Room dev server on localhost",
+      "type": "shell",
+      "command": "node server.js",
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "blend-room",
+        "fileLocation": "autoDetect",
+        "pattern": {
+          "regexp": "^(.*)$",
+          "file": 1,
+          "message": 1
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": ".*starting Blend Room server.*",
+          "endsPattern": ".*ready on http.*"
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "serve + open browser",
+      "detail": "Start the server and open your default browser",
+      "type": "shell",
+      "command": "node server.js --open",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "blend-room",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Give it tracks and it builds a DJ set, then hands you the decks.",
+  "scripts": {
+    "start": "node server.js --open",
+    "dev": "node server.js",
+    "serve": "node server.js --no-reload"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
